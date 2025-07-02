@@ -10,7 +10,7 @@ export default function Cabeza() {
             src="/lupa.png"
             />
 
-            <p className="mt-8"><i>Knowy</i></p>
+            <p className="mt-8 ml-5"><i>Knowy</i></p>
         </header>
     )
 }
