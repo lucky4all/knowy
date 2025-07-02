@@ -1,0 +1,32 @@
+# Node dependencies
+client/node_modules/
+
+# Next.js build output
+client/.next/
+
+# Logs
+client/node_modules/is-arrayish/yarn-error.log
+
+# Environment & Secrets
+server/.env
+
+# Optional: coverage reports, build outputs, SQLite/DBs, test data, IDE/OS files
+# Uncomment as needed
+# client/out/
+# client/coverage/
+# client/dist/
+# client/build/
+# client/*.sqlite
+# server/*.sqlite
+# *.log
+# *.pem
+# *.db
+# .DS_Store
+# *.swp
+# *.swo
+# .idea/
+# .vscode/
+# *.iml
+# *.local
+# *.cache
+# docker-volumes/
