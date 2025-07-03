@@ -7,7 +7,7 @@ client
     .setEndpoint(process.env.NEXT_PUBLIC_API_ENDPOINT)
     .setProject(process.env.NEXT_PUBLIC_PROJECT_ID) 
     .setKey(process.env.NEXT_PUBLIC_API_KEY)
-    .setSelfSigned() // Use only on dev mode with a self-signed SSL cert
+    .setSelfSigned()
 ;
 
 /* Endpoint para iniciar sesión */
