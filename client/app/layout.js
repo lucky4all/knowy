@@ -1,6 +1,7 @@
 import "./globals.css";
 import Cabeza from "./components/cabezera";
-import Pie from "./components/footer";
+// import Pie from "./components/piecera";
+import AlterNav from "./components/cabezera";
 
 export const metadata = {
   title: "Knowy",
@@ -19,9 +20,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/lupa.png"></link>
       </head>
       <body>
-        <Cabeza />
+        <AlterNav />
+        
         {children}
-        <Pie />
+
       </body>
     </html>
   );
