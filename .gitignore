@@ -8,7 +8,11 @@ client/.next/
 client/node_modules/is-arrayish/yarn-error.log
 
 # Environment & Secrets
-server/.env
+*.env
+
+# Testing
+API.rest
+/test
 
 # Optional: coverage reports, build outputs, SQLite/DBs, test data, IDE/OS files
 # Uncomment as needed
