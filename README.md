@@ -22,7 +22,7 @@ Knowy es un portal de compra y venta de cursos online, diseñado para conectar i
 
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/tu-usuario/knowy.git
+   git clone https://github.com/lucky4all/knowy.git
 2. Instala las dependencias:
    ```cd client
       npm install
