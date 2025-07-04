@@ -1,4 +1,4 @@
-const sdk = require("node-appwrite")
+import sdk from "node-appwrite"
 import { NextResponse } from "next/server";
 
 let client = new sdk.Client();

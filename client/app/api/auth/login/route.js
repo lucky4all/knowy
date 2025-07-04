@@ -1,15 +1,32 @@
-const sdk = require("node-appwrite")
+import sdk from "node-appwrite"
 import { NextResponse } from "next/server";
 
-let client = new sdk.Client();
-
+let client = new sdk.Client()
 client
     .setEndpoint(process.env.NEXT_PUBLIC_API_ENDPOINT)
     .setProject(process.env.NEXT_PUBLIC_PROJECT_ID) 
     .setKey(process.env.NEXT_PUBLIC_API_KEY)
-    .setSelfSigned() // Use only on dev mode with a self-signed SSL cert
+    .setSelfSigned()
 ;
 
+const account = new sdk.Account(client)
+
 export async function POST(request) {
-    /* TODO */
+    try {
+        const { email, password } = await request.json();
+
+        if (!email || !password) {
+            return NextResponse.json({
+                operation: "Faltan datos del cliente"
+            }, {status: 400})
+        }
+
+        const action = await account.createEmailPasswordSession(email, password);
+        console.log("El usuario ha iniciado sesion con exito")
+    } catch(er) {
+        console.log("No se ha podido iniciar sesion: ", er)
+        return NextResponse.json({
+            operation: "No se ha podido iniciar sesion"
+        }, {status: 500})
+    }
 }
