@@ -1,5 +1,8 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useRef } from "react"
+import Typed from "typed.js"
 
 export function HomePage() {
   return (
@@ -17,13 +20,24 @@ export function HomePage() {
 }
 
 export default function AltHomePage() {
+  const el = useRef(null)
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Cálidad', 'Knowy'],
+      typeSpeed: 100,
+    })
+     return() => {
+        typed.destroy()
+      }
+  },[])
   return (
     <section className="bg-white lg:grid lg:h-screen lg:place-content-center">
       <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
         <div className="max-w-prose text-left">
           <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
             Formate de forma online con
-            <strong className="text-indigo-600"> Knowy </strong>
+            <strong ref={el} className="text-indigo-600 ml-3"> Knowy </strong>
             de manera sencilla
           </h1>
 

@@ -13,6 +13,7 @@ client/node_modules/is-arrayish/yarn-error.log
 # Testing
 API.rest
 /test
+client/tailwind.config.ts
 
 # Optional: coverage reports, build outputs, SQLite/DBs, test data, IDE/OS files
 # Uncomment as needed
