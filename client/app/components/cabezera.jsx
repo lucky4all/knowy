@@ -59,7 +59,7 @@ export default function AlterNav() {
                 <div className="flex h-16 items-center justify-between">
                     {/* Logo */}
                     <div className="flex-1 md:flex md:items-center md:gap-12">
-                        <Link className="block text-teal-600" href="/">
+                        <Link className="block text-teal-600" href="/" prefetch={false}>
                             <span className="sr-only">Home</span>
                             <Image 
                                 width={66}
@@ -77,7 +77,7 @@ export default function AlterNav() {
                         <nav aria-label="Global" className="hidden md:block">
                             <ul className="flex items-center gap-6 text-xl">
                                 <li>
-                                    <Link className="text-black transition hover:text-purple-400 hover:scale-105" href="/about"> About </Link>
+                                    <Link className="text-black transition hover:text-purple-400 hover:scale-105" href="/about" prefetch={false}> About </Link>
                                 </li>
                                 <li>
                                     <a className="text-black transition hover:text-gray-500/75" href="#"> Cursos </a>
