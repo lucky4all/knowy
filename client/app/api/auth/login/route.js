@@ -1,7 +1,7 @@
-import sdk from "node-appwrite"
+import { Client, Account } from "node-appwrite"
 import { NextResponse } from "next/server";
 
-let client = new sdk.Client()
+let client = new Client()
 client
     .setEndpoint(process.env.NEXT_PUBLIC_API_ENDPOINT)
     .setProject(process.env.NEXT_PUBLIC_PROJECT_ID) 
@@ -9,7 +9,7 @@ client
     .setSelfSigned()
 ;
 
-const account = new sdk.Account(client)
+const account = new Account(client)
 
 export async function POST(request) {
     try {
