@@ -4,9 +4,9 @@ import { NextResponse } from "next/server";
 let client = new Client();
 
 client
-    .setEndpoint(process.env.NEXT_PUBLIC_API_ENDPOINT)
-    .setProject(process.env.NEXT_PUBLIC_PROJECT_ID) 
-    .setKey(process.env.NEXT_PUBLIC_API_KEY)
+    .setEndpoint(process.env.API_ENDPOINT)
+    .setProject(process.env.PROJECT_ID) 
+    .setKey(process.env.API_KEY)
     .setSelfSigned()
 ;
 

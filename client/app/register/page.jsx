@@ -1,6 +1,7 @@
 "use client"
 import axios from "axios";
 import { useState } from "react"
+import Link from "next/link";
 
 export default function Register() {
     const [email, setEmail] = useState('');
@@ -68,14 +69,15 @@ export default function Register() {
                 </div>
                 <button
                     type="submit"
-                    className="mt-4 bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 rounded cursor-pointer"
+                    className="mt-4 bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 rounded cursor-pointer transition-all"
                 >
                     Registrarse
                 </button>
-                <button className="bg-white text-blue-700 font-semibold py-2 rounded cursor-pointer">
+                <Link href="/login" className="bg-white text-blue-700 font-semibold py-2 rounded cursor-pointer text-center hover:bg-gray-200 transition-all">
                     Iniciar sesion
-                </button>
+                </Link>
             </form>
+            
             
         </main>
         

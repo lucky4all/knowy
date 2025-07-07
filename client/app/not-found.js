@@ -9,6 +9,7 @@ const dosis = Dosis({
 
 export default function NotFound() {
     return (
+        <>
         <section className="text-red-500 text-4xl font-bold flex flex-col gap-15 items-center justify-center mt-16">
             <h1 className={dosis.className}>¡Pagina no encontrada! ¿Ingresaste la URL correcta?</h1>
             <Image 
@@ -18,5 +19,7 @@ export default function NotFound() {
             src="/pet.png"
             />
         </section>
+        </>
+        
     )
 }

@@ -7,12 +7,9 @@ const dosis = Sarabun({
     subsets: ['latin']
 })
 
-
-/* TEST */
-
 export default function AlterNav() {
     return (
-        <header className="bg-white h-[8vh]">
+        <header className="shadow-xl bg-blue-500 shadow-blue-800 h-[8vh]">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     {/* Logo */}
@@ -35,16 +32,16 @@ export default function AlterNav() {
                         <nav aria-label="Global" className="hidden md:block">
                             <ul className="flex items-center gap-6 text-xl">
                                 <li>
-                                    <Link className="text-black transition hover:text-purple-400 hover:scale-105" href="/about" prefetch={false}> About </Link>
+                                    <Link className="text-white transition hover:text-gray-400/75 hover:scale-105" href="/about" prefetch={false}> About </Link>
                                 </li>
                                 <li>
-                                    <a className="text-black transition hover:text-gray-500/75" href="#"> Cursos </a>
+                                    <a className="text-white transition hover:text-gray-400/75" href="#"> Cursos </a>
                                 </li>
                                 <li>
-                                    <a className="text-black transition hover:text-gray-500/75" href="#"> Subir curso </a>
+                                    <a className="text-white transition hover:text-gray-400/75" href="#"> Subir curso </a>
                                 </li>
                                 <li>
-                                    <a className="text-black transition hover:text-gray-500/75" href="#"> Contacto </a>
+                                    <a className="text-white transition hover:text-gray-400/75" href="#"> Contacto </a>
                                 </li>
                             </ul>
                         </nav>

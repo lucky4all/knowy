@@ -1,23 +1,8 @@
 "use client"
-import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useRef } from "react"
 import Typed from "typed.js"
-
-export function HomePage() {
-  return (
-    <main className="flex flex-row items-center justify-center text-5xl font-bold mt-[25vh]">
-      <Image 
-      height={200}
-      width={150}
-      alt="imagen no disponible"
-      src="/lay.png"
-      
-      />
-      <h1><i>En proceso...</i></h1>
-    </main>
-  )
-}
+import "./globals.css"
 
 export default function AltHomePage() {
   const el = useRef(null)

@@ -1,13 +1,7 @@
 @import "tailwindcss";
 
-
-
-body {
-  @apply bg-white text-sky-600
-}
-
 header {
-  background-color: #0075E0;
+  @apply shadow-xl bg-blue-500 shadow-blue-800
 }
 
 #bot {
