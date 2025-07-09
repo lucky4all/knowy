@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
 header {
-  @apply shadow-xl bg-blue-500 shadow-blue-800
+  @apply bg-blue-500
 }
 
 #bot {
   @apply mt-5 p-3
+}
+
+#hea {
+  @apply text-white transition hover:text-gray-300/75
 }

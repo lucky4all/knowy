@@ -1,6 +1,7 @@
 import "./globals.css";
 // import Pie from "./components/piecera";
 import AlterNav from "./components/cabezera";
+import { Naver } from "./components/cabezera";
 
 export const metadata = {
   title: "Knowy",
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/lupa.png"></link>
       </head>
       <body>
-        <AlterNav />
+        <Naver />
         
         {children}
 

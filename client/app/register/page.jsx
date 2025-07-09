@@ -19,8 +19,8 @@ export default function Register() {
             const response = await axios.post("/api/auth/register", prepare);
             const data = await response.data
 
-            if (response.status !== 201 ?? 200) {
-                
+            if (response.status !== 201) {
+                throw new Error("La petición no ha podido concretarse")
             }
         } catch(er) {
             console.error(er)
@@ -73,11 +73,10 @@ export default function Register() {
                 >
                     Registrarse
                 </button>
-                <Link href="/login" className="bg-white text-blue-700 font-semibold py-2 rounded cursor-pointer text-center hover:bg-gray-200 transition-all">
+                <Link prefetch={false} href="/login" className="bg-white text-blue-700 font-semibold py-2 rounded cursor-pointer text-center hover:bg-gray-200 transition-all">
                     Iniciar sesion
                 </Link>
             </form>
-            
             
         </main>
         

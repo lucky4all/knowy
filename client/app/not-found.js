@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { Dosis } from "@next/font/google"
-import "./alt.css"
 
 const dosis = Dosis({
     weight: "400",
