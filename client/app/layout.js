@@ -1,5 +1,8 @@
 import "./globals.css";
+/*
+* TODO
 // import Pie from "./components/piecera";
+*/
 import Naver from "./components/cabezera";
 
 export const metadata = {
@@ -9,7 +12,9 @@ export const metadata = {
   openGraph: {
     title: "Knowy Courses",
     description: "Portal de compra y venta de cursos",
-    image: "/pet.png"
+    image: "/pet.png",
+    site_name: "Knowy",
+    type: "website"
   }
 };
 
