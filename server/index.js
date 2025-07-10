@@ -38,16 +38,16 @@ client
 app.post("/preauth", async (req, res) => {
     let response = req.body;
     if (!response.name || !response.username || !response.email) {
-        res.json({ operation: "Faltan datos del cliente" }).status(400);
+        res.status(400).json({ operation: "Faltan datos del cliente" })
         return;
     }
 
     try {
-        const res = await db.createDocument('6864a3ee00160df88c81', '686f72fb00007726ce23', ID.unique(), response);
-        res.json({ operation: "usuario creado con exito" }).status(201);
+        const operation = await db.createDocument('6864a3ee00160df88c81', '686f72fb00007726ce23', ID.unique(), response);
+        res.status(201).json({ operation: "usuario creado con exito" })
     } catch(er) {
         console.log(er);
-        res.json({ operation: "No se ha podido crear el usuario" }).status(500)
+        res.status(500).json({ operation: "No se ha podido crear el usuario" })
     }
     
 })
