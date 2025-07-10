@@ -1,4 +1,4 @@
-import {Client, Users, Account, ID} from "node-appwrite"
+import {Client, Users, ID} from "node-appwrite"
 import { NextResponse } from "next/server";
 
 let client = new Client();

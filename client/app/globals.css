@@ -11,3 +11,7 @@ header {
 #hea {
   @apply text-white transition hover:text-gray-300/75
 }
+
+input {
+  @apply border border-gray-200/75 py-2 px-2 w-[50%] bg-gray-100 rounded-[4px]
+}
