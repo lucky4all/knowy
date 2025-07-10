@@ -24,7 +24,7 @@ Appwrite client SDK
 
 */
 
-import { Client, Databases, ID } from "appwrite"
+import { Client, Databases, ID } from "node-appwrite"
 
 const client = new Client();
 const db = new Databases(client);
