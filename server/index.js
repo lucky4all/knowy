@@ -1,10 +1,10 @@
-const express = require('express');
-const cors = require('cors');
-const helmet = require('helmet');
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
-
-require('dotenv').config();
 
 const port = process.env.PORT;
 
