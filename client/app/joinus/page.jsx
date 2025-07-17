@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react"
 import { Commissioner } from "next/font/google"
 import axios from "axios"
+import SubmitButton from "@/components/Boton"
+import FormIcon from "@/components/Form-icon"
 
 const comissioner = Commissioner({
     weight: ["700"],
@@ -49,16 +51,10 @@ export default function Prelog() {
 export function Data() {
     return(
     <>
-      <span className={comissioner.className}><h1 className="text-sky-600 text-5xl font-bold">Knowy</h1></span>
+     <FormIcon></FormIcon>
       <p className="text-gray-500 text-center">Únete a nuestra comunidad. ¡Pre-regístrate ahora para obtener un <strong className="text-indigo-500">25%</strong> descuento en cursos online el dia de nuestro lanzamiento!</p>
     </>
 )
 } 
     
     
-
-export function SubmitButton({ contexto }) {
-    return(
-          <button className="bg-indigo-600 rounded-sm mt-5 py-3 px-2.5 text-[17px] cursor-pointer hover:bg-indigo-500 transition-colors text-white w-[35%]" type="submit">{contexto}</button>
-    )
-}

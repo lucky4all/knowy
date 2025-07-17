@@ -13,10 +13,11 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet())
 
-app.get("/", (req, res) => {
-    res.json({ estado: "servidor funcionando" });
- }
-)
+const MESSAGE_TYPES = Object.freeze({
+    error: "Ha ocurrido un error inesperado",
+    warning: "Es probable que una configuración no sea la adecuada",
+    todo: "Esta acción está pendiente de ser completada"
+})
 
 /*
 
@@ -45,8 +46,9 @@ app.post("/preauth", async (req, res) => {
     try {
         const operation = await db.createDocument('6864a3ee00160df88c81', '686f72fb00007726ce23', ID.unique(), response);
         res.status(201).json({ operation: "usuario creado con exito" })
+        console.log("Usuario creado con exito")
     } catch(er) {
-        console.log(er);
+        console.log(MESSAGE_TYPES.error, er);
         res.status(500).json({ operation: "No se ha podido crear el usuario" })
     }
     
