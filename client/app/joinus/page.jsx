@@ -1,14 +1,8 @@
 "use client"
 import { useEffect, useState } from "react"
-import { Commissioner } from "next/font/google"
 import axios from "axios"
 import SubmitButton from "@/components/Boton"
 import FormIcon from "@/components/Form-icon"
-
-const comissioner = Commissioner({
-    weight: ["700"],
-    subsets: ["latin"],
-})
 
 export default function Prelog() {
     useEffect(() => {
@@ -21,6 +15,12 @@ export default function Prelog() {
 
     async function handleSubmit(event) {
         event.preventDefault();
+
+        if (!name || !username || !email) {
+            alert("Te faltan datos!");
+            return;
+        }
+
         const data = {
             name: name,
             username: username,

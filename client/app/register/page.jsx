@@ -7,13 +7,19 @@ import { useState } from "react"
 
 export default function Register() {
     const [mail, setMail] = useState('');
-    const [name, setName] = useState('');
+    const [username, setName] = useState('');
     const [password, setPassword] = useState('');
 
     async function handleSubmit(event) {
         event.preventDefault();
+
+         if (!username || !mail || !password) {
+            alert("Te faltan datos!");
+            return;
+        }
+
         const data = {
-            username: name,
+            username: username,
             email: mail,
             password: password
         }
@@ -22,8 +28,6 @@ export default function Register() {
         let info = await response.data;
         console.log(info);
     }
-
-
 
     return (
         <div>
