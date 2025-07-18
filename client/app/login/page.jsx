@@ -40,7 +40,7 @@ export default function Login() {
                 <label>Correo Electrónico</label>
                 <input type="mail" placeholder="tu@ejemplo.com" onChange={(e) => setMail(e.target.value)} />
                 <label>Contraseña</label>
-                <input type="password" placeholder="tunombre@ejemplo.com" onChange={(e) => setPassword(e.target.value)}/>
+                <input type="password" placeholder="*********" onChange={(e) => setPassword(e.target.value)}/>
                 <SubmitButton contexto="Registrarse" />
             </form>
         </div>

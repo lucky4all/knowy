@@ -1,0 +1,35 @@
+.card {
+  width: 400px;
+  padding-right: 10px;
+  height: fit-content;
+  padding-bottom: 12px;
+  background: lightgrey;
+  border-left-style: solid;
+  border-left-color: red;
+  border-left-width: 5px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: linear-gradient(to right, #f7575756, #f7575725 50%, #f7575738);
+}
+
+.card .sveg {
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 12px;
+  fill: red;
+  float: left;
+}
+
+.card .parr {
+  float: left;
+  padding-top: 13px;
+  padding-left: 10px;
+  color: black;
+  font-size: 15px;
+}
+
+.card .spa {
+  display: flex;
+  align-items: left;
+}

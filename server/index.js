@@ -23,7 +23,7 @@ const MESSAGE_TYPES = Object.freeze({
 
 Appwrite client SDK
 
-*/
+
 
 import { Client, Databases, ID } from "node-appwrite"
 
@@ -35,6 +35,7 @@ client
     .setProject(process.env.PROJECT_ID)
     .setKey(process.env.API_KEY)
 ;
+
 
 app.post("/preauth", async (req, res) => {
     let response = req.body;
@@ -53,7 +54,7 @@ app.post("/preauth", async (req, res) => {
     }
     
 })
-
+*/
 app.listen(port, () => {
     console.log("Servidor corriendo port el puerto: ", port)
 })
