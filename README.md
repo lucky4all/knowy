@@ -1,11 +1,9 @@
 
 # Knowy
 
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/5cb68c58-4b40-4bd9-bc41-c30068cb2f2e" />
+
 Knowy es una plataforma online donde se realizan compra y venta de cursos y certificaciones. Dentro de la plataforma se brindan clases en vivo y acceso a material de estudio.
-
-
-![Knowy](https://ibb.co/JWDzwRqH)
-
 
 ## Autores
 
